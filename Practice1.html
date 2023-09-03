@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY FIRST REACT APP</title>
+    <script src="JSFILES/reactdevelopment.js"></script>
+    <script src="JSFILES/reactdomdevelopment.js"></script>
+    <script src="JSFILES/babel.js"></script>
+    <link rel="stylesheet" href="css1.css"/>
+</head>
+<body>
+    <div id="d1"></div>
+    <script type="text/babel">
+        const ar1=["JAVA","Introduction to java","datatypes","methods etc."]
+        const ar2=["SQL","Single - Row Function","Multi - Row Function","SET Operations etc."]
+        const App=()=>{
+            return <div className="c13">
+                        <div className="c14">
+                        </div>
+                        <div className="c3">
+                            <label className="c1">ONLINE <br/>TRAINING</label><br/>
+                            <span className="c2">Ready to learn something awesome together?</span>
+                            <img id="img1" src="Images/img4.jpg" width="200px" height="100px"/>
+                            <div className="c4">
+                                <div>
+                                    {
+                                    ar1.map((v,i)=>{
+                                        return <><label>{v}</label><br/></>})
+                                    }
+                                </div>
+                                <div>
+                                    {
+                                    ar2.map((v,i)=>{
+                                        return <><label>{v}</label><br/></>})
+                                    }
+                                </div>
+
+                            </div>
+                            <span className="c5">www.clouddecktechnologies.com</span>
+                        </div>
+                        <div className="c6">
+                            <img src="Images/img2.jpg" width="70px" height="50px" className="c8" />
+                            <label className="c9">After&nbsp;Training&nbsp;<br/>100%&nbsp;placement</label>
+                            <div className="c7">
+                                <div className="c10">
+                                    <label>Join&nbsp;Free&nbsp;DEMO class&nbsp;on 24/05/23</label>
+                                </div>
+                            </div>
+                            <div className="c11">
+                                <label >Contact&nbsp;Us: 63022XXX51&nbsp;</label><br/>
+                                <label >Visit&nbsp;Us:<br/>2nd Floor ANR Complex 1866/A<br/>579 block HYD.</label>
+                                
+                            </div>
+                        </div>
+                        <div className="c12">
+                            <label>Glory H -&#128310; Free DEMO&#128310;  &#9997;  Enroll Now.....</label>
+                        </div>
+                    </div>
+
+        }
+        var ref=ReactDOM.createRoot(document.querySelector("#d1"))
+        ref.render(<App/>)
+
+    </script>
+    
+</body>
+</html>
